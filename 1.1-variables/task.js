@@ -7,10 +7,17 @@
 
 function averageMark(a, g, p) {
 	
-    // реализуйте здесь задание №1
-    
-	return // ваш ответ;
-}
+        function average() {
+            let sum = 0;
+
+            for (let i = 0; i < arguments[i]; i++ ) sum += arguments[i];
+
+            return sum == 0 ? sum : sum / arguments.length;
+        }
+
+        alert( average( 1, 2, 3, 4, 5, 6, 7, 8, 9) );
+   
+   
 
 function sayHello(userName) {
 	
