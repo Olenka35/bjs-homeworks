@@ -20,6 +20,28 @@
     <span id="helloResult"></span>
 
     <script src="task.js"></script>
+    
+alert("Мы предлагаем Вам сделать вклад в нашем банке на пять лет. Без капитализации.");
+    
+var sum=parseInt(Math.round(prompt("Введите сумму вклада:")));
+    
+var perc=parseInt(Math.round(prompt("Введите желаемый процент:")));
+    
+
+for(var i=1; i<6; i++) { 
+                  
+var prof = ((sum*perc)*i)/100;
+var profIt = sum + prof;
+                  
+  if(sum>0 && perc<100 && perc>0) {
+      alert("Ваша прибыль в " +i+"й год - " + prof + ". Ваш доход - " +profIt);
+	  document.write("\nВаша прибыль в " +i+"й год - " + prof + ". Ваш доход - " +profIt);
+    }
+    else {
+        alert("Введены некоректные данные");
+        break;
+    }
+}
     <script src="main.js"></script>
 </body>
 </html>
