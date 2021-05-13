@@ -1,12 +1,12 @@
-use strict”;
+"use strict";
 function calculateTotalMortgage(percent, contribution, amount, date) {
-  if (percent < 0 || isNaN(percent) === true || percent === “”) {
+  if (percent < 0 || isNaN(percent) === true || percent === " ") {
     return `Параметр percent содержит неправильное значение ${percent}`;
-  } else if (contribution < 0 || isNaN(contribution) === true || contribution === “”) {
+  } else if (contribution < 0 || isNaN(contribution) === true || contribution === " ") {
     return `Параметр contribution содержит неправильное значение ${contribution}`;
-  } else if (amount < 0 || isNaN(amount) === true || amount === “”) {
+  } else if (amount < 0 || isNaN(amount) === true || amount === " ") {
     return `Параметр amount содержит неправильное значение ${amount}`;
-  } else if (new Date > date || date === “”) {
+  } else if (new Date > date || date === " ") {
     return `Параметр date содержит неправильное значение ${date}`;
   }
   let P = percent/(12*100);
@@ -20,7 +20,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 
   
  function getGreeting() {
-    let name = prompt("Введите имя");
+   
     if (name != "null") {
     console.log('Привет, мир! Меня зовут' + ' ' + name);
 }   else  {
