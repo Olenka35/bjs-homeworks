@@ -102,5 +102,5 @@
 	
 	testCase(sum, arr, "Время выполнения sum");
 	testCase(mSum, arr, "Время выполнения mSum");
-•	© 2021 GitHub, Inc.
+
 
