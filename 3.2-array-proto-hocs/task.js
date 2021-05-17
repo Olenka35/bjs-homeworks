@@ -22,16 +22,16 @@ function memorize(fn, limit) {
     if(getMem) {
       return getMem.result
     };
-    const result = fn(...args)
-    if (memory.length <= limit) {
-      memory.push({args: args, result: result});
-    } else {     
-      memory.push({args: args, result: result});
-      memory.shift()      
+    const result = fn(...args); 
+    memory.push({args: args, result: result});
+    
+    if ( memory.length  <=  limit) {
+      memory.shift ( )      
     }
     return result
   } 
 }
+
 
 // const test = memorize(compareArguments,10);
 const sums = memorize(sum, 3);
